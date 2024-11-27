@@ -33,10 +33,41 @@ source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQzwjbXzb6
 <MaterialIcons name="attach-money" size={24} color="#DEE3E8" />
 </View>
 
+
+{/* ButtonContainer */}
+
+<View style={styles.ButtomContainer}>
+<View style={styles.row}>
+  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+</View>
+
+<View style={styles.row}>
+<Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/> 
+ <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+</View>
+
+<View style={styles.row}>
+<Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>
+  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+</View>
+
+</View>
+
   </View>
   );
 }
 
+
+const Card = ({bgColor, icon , title ,color} : {bgColor:string, icon:any , title:string ,color:string}) => {
+  return (
+    <View style={[styles.card, {backgroundColor : bgColor}]}>
+<Text style={{ textAlign: "right"}}>{title}</Text>
+<MaterialIcons name={icon} size={70} color={color}/>
+
+    </View>
+  )
+}
 
 
 const styles = StyleSheet.create({
@@ -85,9 +116,24 @@ InfoView:{
   backgroundColor: "#fff",
   borderRadius: 12,
   marginTop: -15,
-  
+  },
+ButtomContainer: {
+flex: 1,
+margin: 20,
+gap: 15,
+
+},
+row:{
+  flex: 1,
+  flexDirection: "row",
+  gap: 15,
+
+},
+card:{
+  flex: 1,
+padding: 10,
+  borderRadius: 12,
+  justifyContent : "space-between",
 }
-
-
 
 }) 

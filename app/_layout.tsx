@@ -38,18 +38,19 @@ source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQzwjbXzb6
 
 <View style={styles.ButtomContainer}>
 <View style={styles.row}>
-  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
-  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+<Card title={'Carpool'} icon={'electric-car'} bgColor={'paleturquoise'} color={'teal'}/> 
+  <Card title={'Ride'} icon={'electric-bike'} bgColor={'lightgreen'} color={'green'}/>  
+  
 </View>
 
 <View style={styles.row}>
-<Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/> 
- <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+<Card title={'Delivery'} icon={'delivery-dining'} bgColor={'blanchedalmond'} color={'burlywood'}/> 
+ <Card title={'Mobiles'} icon={'mobile-friendly'} bgColor={'pink'} color={'mediumorchid'}/>  
 </View>
 
 <View style={styles.row}>
-<Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>
-  <Card title={'Carpool'} icon={'electric-car'} bgColor={'lightblue'} color={'blue'}/>  
+<Card title={'Shops'} icon={'shopping-basket'} bgColor={'paleturquoise'} color={'steelblue'}/>
+  <Card title={'Rentals'} icon={'car-rental'} bgColor={'lightgoldenrodyellow'} color={'darkgoldenrod'}/>  
 </View>
 
 </View>
@@ -59,7 +60,7 @@ source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQzwjbXzb6
 }
 
 
-const Card = ({bgColor, icon , title ,color} : {bgColor:string, icon:any , title:string ,color:string}) => {
+const Card = ({bgColor, icon , title ,color,} : {bgColor:string, icon:any , title:string ,color:string}) => {
   return (
     <View style={[styles.card, {backgroundColor : bgColor}]}>
 <Text style={{ textAlign: "right"}}>{title}</Text>
